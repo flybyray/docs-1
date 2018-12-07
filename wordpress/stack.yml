@@ -21,3 +21,9 @@ services:
       MYSQL_USER: exampleuser
       MYSQL_PASSWORD: examplepass
       MYSQL_RANDOM_ROOT_PASSWORD: '1'
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8081:8080
